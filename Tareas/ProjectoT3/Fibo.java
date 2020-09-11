@@ -7,12 +7,15 @@ class Fibo{
         System.out.println(valor1);
         System.out.println(valor2);
         //par while
-        for (var i = 1; i < 10; i++) {
+        int a=1
+        while(a<10)
+        {
             int valor3= valor1+valor2;
             System.out.println(valor3);
             
             valor1=valor2;
             valor2=valor3;
+            a++;
         }
     }
 }
