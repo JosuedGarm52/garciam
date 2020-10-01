@@ -1,4 +1,0 @@
-C:\Users\jacco\git-man\Prueba\obj\Debug\netcoreapp3.1\git-man.csprojAssemblyReference.cache
-C:\Users\jacco\git-man\Prueba\obj\Debug\netcoreapp3.1\git-man.AssemblyInfoInputs.cache
-C:\Users\jacco\git-man\Prueba\obj\Debug\netcoreapp3.1\git-man.AssemblyInfo.cs
-C:\Users\jacco\git-man\Prueba\obj\Debug\netcoreapp3.1\git-man.csproj.CoreCompileInputs.cache
