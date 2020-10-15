@@ -1,6 +1,6 @@
 package Source;
 
-import PaqueteExtra;
+
 import java.awt.Component;
 import java.awt.EventQueue;
 
@@ -12,7 +12,6 @@ import javax.swing.SwingConstants;
 import javax.swing.JButton;
 import java.awt.event.ActionListener;
 import java.util.HashSet;
-import java.util.ListIterator;
 import java.util.Random;
 import java.util.Set;
 import java.awt.event.ActionEvent;
