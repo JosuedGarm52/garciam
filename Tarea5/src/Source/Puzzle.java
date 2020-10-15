@@ -1,6 +1,7 @@
 package Source;
 
 
+import java.awt.Component;
 import java.awt.EventQueue;
 
 import javax.swing.JFrame;
@@ -10,7 +11,10 @@ import javax.swing.JLabel;
 import javax.swing.SwingConstants;
 import javax.swing.JButton;
 import java.awt.event.ActionListener;
+import java.util.HashSet;
 import java.util.ListIterator;
+import java.util.Random;
+import java.util.Set;
 import java.awt.event.ActionEvent;
 
 public class Puzzle extends JFrame {
@@ -158,14 +162,51 @@ public class Puzzle extends JFrame {
 		btnGenerar.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) 
 			{
-				Randoming random = new Randoming();
-				ListIterator<Integer> iter = random.numbers.listIterator();
-				while(iter.hasPrevious())
+				//Randoming random = new Randoming();
+				//ListIterator<Integer> iter = random.numbers.listIterator();
+				int b=0;
+				while(b<8)
 				{
-					
+				Random random = new Random();
+				Set<Integer> Numbers = new HashSet<>();
+				int num=0;
+				try
+				{
+					while(Numbers.size()<33)//iter.hasPrevious())
+					{
+						 int randomNumber = random.nextInt(23);
+						if(!Numbers.contains(randomNumber))
+						{
+							JButton boton = (JButton)AsignarBoton(num);
+							String numCadena= randomNumber+"";
+							boton.setText(numCadena);
+							Numbers.add(randomNumber);
+						}
+						num++;
+					}
+				}catch(Exception ex)
+				{
+					ex.printStackTrace();
+				}
+				b++;
+				/*for(int x = 0;x<23;x++)
+				{
+					JButton boton = (JButton)AsignarBoton(num);
+					if(boton.getText()!="x")
+					{
+						b++;
+					}
+				}
+				}while(b==23);*/
 				}
 			}
+
+			private Component AsignarBoton(int num) {
+				// TODO Auto-generated method stub
+				return panel.getComponent(num);
+			}
 		});
+		
 		btnGenerar.setBounds(20, 225, 89, 23);
 		contentPane.add(btnGenerar);
 		
