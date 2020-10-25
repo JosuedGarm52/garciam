@@ -9,4 +9,4 @@ Dentro de esta carpeta se encuentran los proyectos de las tareas en java.
 #### El proyecto hace la serie fibonacci en una aplicacion desarrollado en ecplise. 
 ## Tarea5
 ### Dentro se encuentra la carpeta src y Source, dentro esta el proyecto **Puzzle.Java que es el programa principal**. 
-#### El proyecto aun no esta terminado. 
+#### El puzzle funciona pulsando los botones rojos cercanos al azul para ordenarlos.   
