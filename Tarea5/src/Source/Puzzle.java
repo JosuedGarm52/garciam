@@ -3,11 +3,11 @@ package Source;
 
 import java.awt.Component;
 import java.awt.EventQueue;
-import PaquetesExtra.JButtonP;
+
 import javax.swing.JFrame;
 import javax.swing.JPanel;
 import javax.swing.border.EmptyBorder;
-
+import PaquetesExtra.JButtonP;
 import PaquetesExtra.Comprobar;
 import PaquetesExtra.base;
 import javax.swing.JLabel;
