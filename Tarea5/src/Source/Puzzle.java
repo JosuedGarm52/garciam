@@ -1185,6 +1185,7 @@ public class Puzzle extends JFrame {
 		btnGenerar.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) 
 			{
+				btnGenerar.setEnabled(false);
 				cc1.getComenzo(true);
 				//Comprobar cc = new Comprobar();
 				//boolean b= cc.ComprobarBotones(btnBoton1, btnBoton2, btnBoton4, btnBoton4, btnBoton5, btnBoton6, btnBoton7, btnBoton8, btnBoton9, btnBoton10, btnBoton16, btnBoton12, btnBoton13, btnBoton14_1, btnBoton15 , btnBoton16, btnBoton17, btnBoton18, btnBoton19, btnBoton9, btnBotonBase, btnBoton22, btnBoton23, btnBoton24);
