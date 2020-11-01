@@ -18,6 +18,5 @@ public class Main {
 		cajera1.start();
 		cajera2.start();
 		cajera3.start();
-		System.out.println("Programa terminado");
 	}
 }
