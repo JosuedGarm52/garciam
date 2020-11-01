@@ -11,12 +11,15 @@ public class Main {
 
 		// Tiempo inicial de referencia
 		long initialTime = System.currentTimeMillis();
-		cajeraThread cajera1 = new cajeraThread("Cajera 1", cliente1, initialTime);
-		cajeraThread cajera2 = new cajeraThread("Cajera 2", cliente2, initialTime);
-		cajeraThread cajera3 = new cajeraThread("Cajera 3", cliente3, initialTime);
+		cajeraThread cajera1 = new cajeraThread("Puesto 1", cliente1, initialTime);
+		cajeraThread cajera2 = new cajeraThread("Puesto 2", cliente2, initialTime);
+		cajeraThread cajera3 = new cajeraThread("Puesto 3", cliente3, initialTime);
 		
 		cajera1.start();
 		cajera2.start();
 		cajera3.start();
+
+		
 	}
+	
 }

@@ -11,5 +11,6 @@ Dentro de esta carpeta se encuentran los proyectos de las tareas en java.
 ### Dentro se encuentra la carpeta src y Source, dentro esta el proyecto **Puzzle.Java que es el programa principal**. 
 #### El puzzle funciona pulsando los botones rojos cercanos al azul para ordenarlos.   
 ## Tarea6  
-### Dentro se encuentra la carpeta src y Source, dentro se encuentra el proyecto **Main.Java** que es el programa principal.  
-#### El programa ejecuta 3 procesos de lectura de productos en tres cajas en una tienda.  
+### Dentro se encuentra la carpeta src y Source, dentro se encuentra el proyecto **Main.Java** y **mainRunnable** que son los programas que se pueden ejecutar.  
+## Mas informacion de los MAINS en el README dentro de la carpeta.  
+#### El programa ejecuta 3 procesos de lectura de varios productos de 3 clientes en un puesto.  

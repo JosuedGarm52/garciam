@@ -19,24 +19,46 @@ public class cajeraThread extends Thread  {
 
 	@Override
 	public void run() {
-		
-		System.out.println("La cajera " + this.nombre + " COMIENZA A PROCESAR LA COMPRA DEL CLIENTE " 
-					+ this.cliente.getNombre() + " EN EL TIEMPO: " 
+		System.out.println("El " + this.nombre + " comenzo a procesar la compra del cliente:  " 
+				+ this.cliente.getNombre() + " EN EL TIEMPO: " 
+				+ (System.currentTimeMillis() - this.initialTime) / 1000 
+				+ "seg");
+
+	for (int i = 0; i < cliente.lenght; i++) { 
+		this.esperarXsegundos(cliente.getCarroCompra(i));
+		System.out.println("La maquina esta procesando el producto " + (i + 1) 
+		+ " del cliente " + this.cliente.getNombre() + "->Tiempo: " 
+		+ (System.currentTimeMillis() - this.initialTime) / 1000 
+		+ "seg");
+	}
+
+	System.out.println("El " + this.nombre + " ha terminado de procesar al " 
+					+ this.cliente.getNombre() + " en el tiempo: " 
 					+ (System.currentTimeMillis() - this.initialTime) / 1000 
 					+ "seg");
+		
+		
+	}
+	public void ProcesarCompra(Cliente cliente2, long y)
+	{
+		System.out.println("El " + this.nombre + " comenzo a procesar la compra del cliente:  " 
+				+ this.cliente.getNombre() + " EN EL TIEMPO: " 
+				+ (System.currentTimeMillis() - this.initialTime) / 1000 
+				+ "seg");
 
-		for (int i = 0; i < cliente.lenght; i++) { 
-			this.esperarXsegundos(cliente.getCarroCompra(i));
-			System.out.println("La maquina esta procesado el producto " + (i + 1) 
-			+ " del cliente " + this.cliente.getNombre() + "->Tiempo: " 
-			+ (System.currentTimeMillis() - this.initialTime) / 1000 
-			+ "seg");
-		}
+	for (int i = 0; i < cliente.lenght; i++) { 
+		this.esperarXsegundos(cliente.getCarroCompra(i));
+		System.out.println("La maquina esta procesando el producto " + (i + 1) 
+		+ " del cliente " + this.cliente.getNombre() + "->Tiempo: " 
+		+ (System.currentTimeMillis() - this.initialTime) / 1000 
+		+ "seg");
+	}
 
-		System.out.println("La cajera " + this.nombre + " HA TERMINADO DE PROCESAR " 
-						+ this.cliente.getNombre() + " EN EL TIEMPO: " 
-						+ (System.currentTimeMillis() - this.initialTime) / 1000 
-						+ "seg");
+	System.out.println("El " + this.nombre + " ha terminado de procesar al " 
+					+ this.cliente.getNombre() + " en el tiempo: " 
+					+ (System.currentTimeMillis() - this.initialTime) / 1000 
+					+ "seg");
+		
 	}
 
 	private void esperarXsegundos(int segundos) {
